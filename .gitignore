@@ -1,9 +1,10 @@
 /venv
 /one_page.txt
 /arina.ipynb
-/collect.txt
+collect.txt
 try_scrapper.ipynb
 parser.ipynb
 materials.py
 help.py
 collect_mini.txt
+/other_models
