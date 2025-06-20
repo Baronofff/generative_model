@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import shutil
 
 # import headers pattern from .gitignore
 pattern = 'http://az.lib.ru'
@@ -69,7 +68,7 @@ def retrieve_texts_urls(author_url):
 
 def get_text(text_url):
     soup = create_soup(text_url)
-    text = [dd for dd in soup.find_all('dd') if not dd.children()]  # True означает любой тег
+    text = [dd for dd in soup.find_all('dd') if not dd.children()]
     return text
 
 
