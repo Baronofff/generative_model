@@ -22,7 +22,7 @@ def main() -> None:
     decoded = str(processor.decode(encoded))
     result = decoded
 
-    model_10 = NGramLanguageModel(encoded, 10)  # Оптимально для Greedy
+    model_10 = NGramLanguageModel(encoded, 10)
 
     model_7 = NGramLanguageModel(encoded, 7)
     print("Model 4 built successfully?", model_10.build() == 0)  # Должно быть True
